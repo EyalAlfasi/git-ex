@@ -1,0 +1,135 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.top-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #00003C;
+}
+
+.inner-container {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #00003C;
+    box-shadow: 20px 20px 60px #00001e, -20px -20px 60px #00005a;
+}
+
+.welcome-screen {
+    display: flex;
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.welcome-screen h1 {
+    color: #f9f9f9;
+    font-size: 4em;
+}
+
+.welcome-screen h3 {
+    color: #f9f9f9;
+    font-size: 2em;
+}
+
+.difficulty {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    color: #f9f9f9;
+}
+
+.difficulty label {
+    margin-right: 25px;
+    font-size: 1.2em;
+    font-weight: 900;
+    padding: 10px;
+    transition: all 0.2s;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #150e79;
+}
+
+.difficulty label:hover {
+    background-color: #241c97;
+}
+
+.difficulty input[type=radio]:checked+label {
+    background-color: #08ee7f;
+}
+
+.difficulty input {
+    visibility: hidden;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4em;
+    color: #f9f9f9;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #08ee7f;
+}
+
+.tdclicked {
+    background-color: #08ee7f;
+}
+
+table {
+    border-spacing: 5px;
+}
+
+.stopwatch, .next-num {
+    color: #f9f9f9;
+    border: 2px solid #08EE7F;
+    font-size: 3em;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline;
+    margin: 5px;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 700;
+    background-color: #08EE7F;
+    color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 10px 0px;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+}
+
+.start-btn {
+    width: auto;
+    padding: 20px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}

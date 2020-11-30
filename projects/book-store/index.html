@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="onInit()">
+    <div class="main-container">
+        <div class="read-book-modal-container">
+
+        </div>
+        <div class="add-book-container">
+            <div class="add-book">
+                <h2 class="main-title">Add a new book!</h2>
+                <div class="add-book-modal">
+                    <input name="bookName" placeholder="Book name" type="text">
+                    <input name="bookPrice" placeholder="Book price" type="text">
+                    <button onclick="onAddBook()" class="btn add-btn">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+            <div class="table-inner-container">
+                <table class="books-table">
+                    <thead>
+                        <tr class="table-titles">
+                            <td>Order</td>
+                            <td>Id</td>
+                            <td class="sort-col" data-sort="txt" onclick="onSetSort(this)">Title</td>
+                            <td class="sort-col" data-sort="price" onclick="onSetSort(this)">Price</td>
+                            <td>Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <button onclick="onNextPage()" class="pagination-btn">🢂</button onclick="onPrevPage()">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="checkIfAdmin()">
+    <div class="main-container-admin">
+        <h2>Hello admin</h2>
+        <div class="admin-btns">
+            <button class="log-out-btn" onclick="onUserLogOut()">logout</button>
+            <button class="go-back-btn" onclick="onUserGoBack()">Go back</button>
+            <select onchange="onSetSort(this.value)" name="sortUsers">
+                <option value="txt">ABC</option>
+                <option value="time">Date</option>
+            </select>
+        </div>
+        <table>
+            <thead>All the users in the DB</thead>
+            <tbody class="users-table-body">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/local-storage-service.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

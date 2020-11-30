@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch The Nums!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="init()">
+
+    <div class="top-container">
+        <div class="welcome-screen">
+            <h1 class="welcome-heading">Welcome to Touch the nums!</h1>
+            <h3 class="author">By Eyal Alfasi</h3>
+            <button onclick="closeWelcomeScreen()" class="btn start-btn">Start the game!</button>
+        </div>
+        <div class="inner-container">
+            <div class="difficulty">
+                <input onclick="resetGame()" type="radio" id="16" name="difficulty" checked value="16">
+                <label for="16">easy</label><br>
+                <input onclick="resetGame()" type="radio" id="25" name="difficulty" value="25">
+                <label for="25">medium</label><br>
+                <input onclick="resetGame()" type="radio" id="36" name="difficulty" value="36">
+                <label for="36">hard</label>
+
+            </div>
+            <button class="reset-btn btn" onclick="resetGame()">Start over</button>
+            <div>
+                <h3 class="stopwatch"> 0.000</h3>
+                <h3 class="next-num"> Next: 1 </h3>
+            </div>
+            <div class="board-container">
+                <table>
+                    <tbody class="board"> </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
